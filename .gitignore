@@ -10,3 +10,7 @@
 # /src/
 /src/work
 /bin
+
+# .settings
+/.settings/*
+/.checkstyle
