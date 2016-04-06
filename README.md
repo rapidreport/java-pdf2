@@ -1,7 +1,7 @@
 RapidReport/java-pdf2
 ==================
-RapidReport/java-pdf2 は Java 用の帳票レンダリングエンジンで使用する
-PDF出力にiText5系を用いています。
+RapidReport/java-pdf2 は 帳票ツールRapidReport Java版 の出力エンジンから利用する
+PDF形式向けのレンダラです。iText5系を利用しています。
 
 RapidReport  
 [http://rapidreport.systembase.co.jp/](http://rapidreport.systembase.co.jp/)
