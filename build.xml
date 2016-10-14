@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <project default="main">
-	<property name="version" value="4.25" />
+	<property name="version" value="4.26" />
 	<property name="src_pdf2" value="src.pdf2" />
 	<property name="class_pdf2" value="build/pdf2.classes" />
 	<property name="target_pdf2" value="build/systembase.report.pdf2-${version}.jar" />
@@ -9,8 +9,7 @@
 	<property name="barcode" value="lib/systembase.barcode-1.3.jar" />
 	<property name="sb_core" value="lib/systembase.core-1.6.jar" />
 	<property name="sb_report" value="lib/systembase.report-${version}.jar" />
-	<property name="zxing_core" value="lib/zxing.core-2.0.jar" />
-	<property name="zxing" value="lib/zxing.javase-2.0.jar" />
+	<property name="zxing" value="lib/zxing.core-3.2.1.jar" />
 	<property name="jsonic" value="lib/jsonic-1.3.0.jar" />
 
 	<target name="main" depends="compile_pdf2, compress_pdf2"/>
@@ -19,7 +18,7 @@
 		<mkdir dir="${class_pdf2}" />
 		<javac srcdir="${src_pdf2}"
 		       destdir="${class_pdf2}"
-		       classpath="${sb_core};${itext};${zxing_core};${zxing};${target_report};${barcode};${sb_report}"
+		       classpath="${sb_core};${itext};${zxing};${target_report};${barcode};${sb_report}"
 		       encoding="UTF-8"
 		       verbose="off"
 		       debug="true"
