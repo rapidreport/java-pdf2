@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <project default="main">
-	<property name="version" value="4.28" />
+	<property name="version" value="4.29" />
 	<property name="src_pdf2" value="src.pdf2" />
 	<property name="class_pdf2" value="build/pdf2.classes" />
 	<property name="target_pdf2" value="build/systembase.report.pdf2-${version}.jar" />
