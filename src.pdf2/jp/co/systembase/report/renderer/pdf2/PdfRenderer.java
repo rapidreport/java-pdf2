@@ -18,6 +18,7 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Image;
 import com.itextpdf.text.RectangleReadOnly;
+import com.itextpdf.text.pdf.PdfContentByte;
 import com.itextpdf.text.pdf.PdfName;
 import com.itextpdf.text.pdf.PdfWriter;
 
@@ -88,6 +89,9 @@ public class PdfRenderer implements IRenderer {
 	}
 
 	public void endPage(ReportDesign reportDesign) throws Throwable {
+		PdfContentByte cb = this.writer.getDirectContent();
+		cb.beginText();
+		cb.endText();
 	}
 
 	public void renderElement(
